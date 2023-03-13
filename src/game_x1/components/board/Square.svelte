@@ -1,11 +1,8 @@
 <script>
 	// @ts-nocheck
-	import { store } from './stores.js';
 
-	export let index;
 
-	$: current = $store.history[$store.stepNumber]
-	$: value = current.board[index];
+
 </script>
 
 <style>
@@ -28,4 +25,4 @@
 	}
 </style>
 
-<button on:click={ () => store.move(index) }>{ value }</button> 
+<button></button> 
