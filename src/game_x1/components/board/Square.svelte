@@ -1,6 +1,8 @@
 <script>
-	// @ts-nocheck
+	import { onPlayer, S_onPlayer } from "../../store/store";
 
+
+	// @ts-nocheck
 
 
 </script>
@@ -25,4 +27,4 @@
 	}
 </style>
 
-<button></button> 
+<button on:click={()=>onPlayer()}> {$S_onPlayer}</button> 

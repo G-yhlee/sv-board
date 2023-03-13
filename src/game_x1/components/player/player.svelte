@@ -1,5 +1,10 @@
+<script>
+
+	import { S_onPlayer } from "../../store/store";
+
+</script>
 <div class='game-info'>
-    <div>Next player: X</div>
+    <div>Next player: {$S_onPlayer}</div>
 </div>
 
 <style>

@@ -3,7 +3,8 @@ import { match,P } from 'ts-pattern';
 
 import {S_onPlayer} from './store'
 
-export function onPlayer(actionPattern:any) {
+export function onPlayer() {
+    S_onPlayer.update(s=>s=="X" ? "O" : "X")
     // logger(actionPattern)
     // let {pageLength, pageCurrent} = actionPattern
 
