@@ -1,5 +1,5 @@
 <script>
-	import { S_onHistory } from "../../store/store";
+	import { onBoard, onHistory, S_onHistory,updateBoard } from "../../store/store";
 
 
     
@@ -7,7 +7,7 @@
 <ol>
     {#each $S_onHistory as history}
     <li >
-        <button>Go to {history.msg} </button>
+        <button on:click={()=>updateBoard(history.board)}>Go to {history.msg} </button>
     </li>
     {/each}
 </ol>
