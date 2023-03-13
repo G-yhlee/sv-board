@@ -10,20 +10,4 @@
 	}
 </style>
 
-<div>
-	<div class="board-row">
-		<Square />
-		<Square />
-		<Square />
-	</div>
-	<div class="board-row">
-		<Square />
-		<Square />
-		<Square />
-	</div>
-	<div class="board-row">
-		<Square />
-		<Square />
-		<Square />
-	</div>
-</div>
+<Square />

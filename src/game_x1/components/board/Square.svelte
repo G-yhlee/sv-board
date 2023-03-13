@@ -1,10 +1,8 @@
-<script>
-	import { onPlayer, S_onPlayer } from "../../store/store";
-
-
+<script lang="ts">
+	import { each } from "svelte/internal";
+	import { onPlayer, S_onPlayer,onBoard, S_onBoard } from "../../store/store";
 	// @ts-nocheck
-
-
+	
 </script>
 
 <style>
@@ -15,11 +13,12 @@
 		font-size: 24px;
 		font-weight: bold;
 		line-height: 34px;
-		height: 34px;
+		
 		margin: -1px;
 		padding: 0;
 		text-align: center;
-		width: 34px;
+		width: 50px;
+		height: 50px; 
 	}
 
 	button:focus {
@@ -27,4 +26,21 @@
 	}
 </style>
 
-<button on:click={()=>onPlayer()}> {$S_onPlayer}</button> 
+{#each $S_onBoard as xs}
+<div class="board-row">
+	{#each xs as x}
+		<button 
+		on:click={ () => {
+			if(x.player) return
+			onBoard(x) 
+			onPlayer(x)
+			} 
+		}
+		>{ x.player }</button> 
+	{/each}	
+</div>
+{/each}
+
+
+
+
