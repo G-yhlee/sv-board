@@ -5,7 +5,11 @@
     
 </script>
 <ol>
+    {#each $S_onHistory as history}
     <li >
-        <button>Go to {$S_onHistory[0].msg} </button>
+        <button>Go to {history.msg} </button>
     </li>
+    {/each}
 </ol>
+
+
