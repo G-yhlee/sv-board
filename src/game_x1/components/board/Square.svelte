@@ -26,19 +26,20 @@
 	}
 </style>
 
-{#each $S_onBoard as xs}
+{#each $S_onBoard as cells}
 <div class="board-row">
-	{#each xs as x}
+	{#each cells as cell}
 		<button 
 		on:click={ () => {
-			if(x.player) return
-			onBoard(x) 
-			onPlayer(x)
-			onHistory(x)
-			updateStage(x)
+			if(cell.player) return
+			onHistory(cell)
+			// onBoard(cell) 
+			// onPlayer(cell)
+			
+			// updateStage(cell)
 			} 
 		}
-		>{ x.player }</button> 
+		>{ cell.player }</button> 
 	{/each}	
 </div>
 {/each}

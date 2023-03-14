@@ -1,7 +1,6 @@
 <script>
 	import { onBoard, onHistory, S_onHistory,updateBoard,updateStage } from "../../store/store";
 
-
     let historys = [
         {xy: [1,1], player: "o", stage: 1},
         // {xy: [2,2], player: "x", stage: 2},
@@ -23,7 +22,7 @@
                 <span>스테이지</span>
             </div>
         </div>
-        {#each historys as history}
+        {#each $S_onHistory as history}
             <div>
                 <div class="flex justify-around items-center ">
                     <span class="text-center">{history.xy[0]}{history.xy[1]}</span>
