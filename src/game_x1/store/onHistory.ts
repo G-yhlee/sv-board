@@ -26,8 +26,12 @@ export function onHistory(cell:any) {
     })
 
     
+    
+    
     S_onBoard.update(s=>{
         return makeBoard(get(S_onHistory),3)
     })
+
+    console.log(get(S_onBoard));
 
 }
