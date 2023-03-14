@@ -2,14 +2,6 @@
 	import { onSelectedStage } from "../../store/onSelectedStage";
 	import { onBoard, onHistory, S_onHistory,updateBoard,updateStage } from "../../store/store";
 
-    let historys = [
-        {xy: [1,1], player: "o", stage: 1},
-        // {xy: [2,2], player: "x", stage: 2},
-        // {xy: [2,3], player: "o", stage: 3},
-        // {xy: [4,4], player: "x", stage: 4},
-        // {xy: [2,4], player: "x", stage: 5},
-        // {xy: [2,2], player: "x", stage: 2},
-    ]
 </script>
 
 <div class="flex  bg-slate-300  justify-center items-center ml-[30px] p-[10px]">

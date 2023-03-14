@@ -17,9 +17,11 @@ const S_onHistory = writable([
 
 const S_onPlayer:Writable<string> = writable("X")
 const S_onStage = writable(0)
+const S_winner = writable("")
 const S_onSelectedStage = writable(0)
 
 export { 
+	S_winner,
 	S_onPlayer,
 	onPlayer,
 	S_onBoard,

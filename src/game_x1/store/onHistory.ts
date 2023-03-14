@@ -3,9 +3,11 @@ import { get } from 'svelte/store'
 
 // import logger from '$lib/fucntion/logger';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-import {S_onHistory,S_onBoard, S_onSelectedStage} from './store'
+import {S_onHistory,S_onBoard, S_onSelectedStage, S_winner} from './store'
 
 import { makeBoard } from './function/makeBoard';
+import { transpose } from './function/transpose';
+import { getDiagonals } from './function/diagonal';
 
 
 export function onHistory(cell:any) {
@@ -32,6 +34,22 @@ export function onHistory(cell:any) {
         return makeBoard(get(S_onHistory),3)
     })
 
-    console.log(get(S_onBoard));
+
+
+    let getXLines = (board) => get(board).map(d=>d.map(d=>d.player))
+    let getYLines = (board) => transpose(board)
+    let lines = (board) => [...getXLines(board),...getYLines(getXLines(board)),...getDiagonals(getXLines(board))]
+    let filter = (lines) => lines.map(v=>[...new Set(v)]).filter(v=>v.length == 1).filter(v=>["X","O"].includes(v[0]) )
+
+    let winner = filter(lines(S_onBoard))
+    console.log(winner);
+    console.log(winner || "");
+    
+    S_winner.update(s=>winner.length ? winner : "")
+
+
+
 
 }
+
+

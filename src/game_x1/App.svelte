@@ -4,6 +4,7 @@
 	import History from './components/history/History.svelte';
 	import Player from './components/player/player.svelte';
 	import Stage from './components/stage/stage.svelte';
+	import Winner from './components/winner/winner.svelte';
 	
 </script>
 
@@ -13,6 +14,8 @@
 	</div>
 	<!-- <Player></Player> -->
 	<!-- <Stage></Stage> -->
+	<Winner></Winner>
+
 	<History></History>
 </div>
 
