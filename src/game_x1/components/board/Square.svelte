@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { each } from "svelte/internal";
-	import { onPlayer,onBoard, S_onBoard, onHistory, updateStage } from "../../store/store";
+	import { onPlayer,onBoard, S_onBoard, onHistory, updateStage, S_onSelectedStage, onSelectedStage } from "../../store/store";
 	// @ts-nocheck
 	
 </script>
@@ -32,11 +32,12 @@
 		<button 
 		on:click={ () => {
 			if(cell.player) return
+			onSelectedStage($S_onSelectedStage+1)
 			onHistory(cell)
 			// onBoard(cell) 
 			// onPlayer(cell)
 			
-			// updateStage(cell)
+			
 			} 
 		}
 		>{ cell.player }</button> 

@@ -29,7 +29,6 @@
                     ()=>onSelectedStage(history.stage)
                 }
                 
-                
                 >
                     <span class="text-center">{history.xy[0]}{history.xy[1]}</span>
                     <span>{history.player}</span>
