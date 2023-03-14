@@ -1,4 +1,5 @@
 <script>
+	import { onSelectedStage } from "../../store/onSelectedStage";
 	import { onBoard, onHistory, S_onHistory,updateBoard,updateStage } from "../../store/store";
 
     let historys = [
@@ -9,8 +10,6 @@
         // {xy: [2,4], player: "x", stage: 5},
         // {xy: [2,2], player: "x", stage: 2},
     ]
-
-    
 </script>
 
 <div class="flex  bg-slate-300  justify-center items-center ml-[30px] p-[10px]">
@@ -24,13 +23,18 @@
         </div>
         {#each $S_onHistory as history}
             <div>
-                <div 
-                class="flex justify-around items-center hover:bg-slate-400 hover:cursor-pointer"
+                <button 
+                class="flex justify-around items-center hover:bg-slate-400 hover:cursor-pointer w-[100%]"
+                on:click={
+                    ()=>onSelectedStage(history.stage)
+                }
+                
+                
                 >
                     <span class="text-center">{history.xy[0]}{history.xy[1]}</span>
                     <span>{history.player}</span>
                     <span>{history.stage}</span>
-                </div>
+                </button>
             </div>
         {/each}
     </div>

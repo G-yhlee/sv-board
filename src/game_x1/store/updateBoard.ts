@@ -7,9 +7,5 @@ import {S_onBoard, S_onPlayer} from './store'
 
 
 export function updateBoard(board:any) {
-    
-
-    // S_onBoard.update(s=>board.map((v: any)=>[...v]))
     S_onBoard.update(s=>[...board])
-
 }

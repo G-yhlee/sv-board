@@ -4,6 +4,8 @@ import { onBoard } from './onBoard'
 import { onHistory } from './onHistory'
 import { updateBoard } from './updateBoard'
 import { updateStage } from './updateStage'
+import { onSelectedStage } from './onSelectedStage'
+
 import { get } from 'svelte/store'
 import { genBoard } from './function/genBoard'
 
@@ -15,7 +17,7 @@ const S_onHistory = writable([
 
 const S_onPlayer:Writable<string> = writable("X")
 const S_onStage = writable(0)
-const S_selectedStage = writable(0)
+const S_onSelectedStage = writable(0)
 
 export { 
 	S_onPlayer,
@@ -27,4 +29,6 @@ export {
 	onHistory,
 	S_onStage,
 	updateStage,
+	S_onSelectedStage,
+	onSelectedStage
 }
