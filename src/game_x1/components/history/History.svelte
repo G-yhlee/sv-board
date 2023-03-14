@@ -3,18 +3,18 @@
 
 
     let historys = [
-        // {xy: [0,0], player: "x", stage: 0},
         {xy: [1,1], player: "o", stage: 1},
-        {xy: [2,2], player: "x", stage: 2},
-        {xy: [2,3], player: "o", stage: 3},
-        {xy: [4,4], player: "x", stage: 4},
-        {xy: [2,4], player: "x", stage: 5},
+        // {xy: [2,2], player: "x", stage: 2},
+        // {xy: [2,3], player: "o", stage: 3},
+        // {xy: [4,4], player: "x", stage: 4},
+        // {xy: [2,4], player: "x", stage: 5},
+        // {xy: [2,2], player: "x", stage: 2},
     ]
 
     
 </script>
 
-<div class=" bg-slate-300 flex justify-center items-center">
+<div class="flex  bg-slate-300  justify-center items-center ml-[30px] p-[10px]">
     <div class="">
         <div>
             <div>
@@ -35,21 +35,6 @@
     </div>
 </div>
 
-<!-- {each} -->
-<!-- 
-<ol>
-    {#each $S_onHistory as history}
-    <li >
-        <button on:click={
-            ()=>{
-                updateBoard(history.board)
-                updateStage(history.stage)
-            }
-        }>Go to {history.msg} </button>
-    </li>
-    {/each}
-</ol>
- -->
 
 
 <style>

@@ -11,9 +11,8 @@
 	<div class='game-board'>
 		<Board/>
 	</div>
-	<Player></Player>
-	
-	<Stage></Stage>
+	<!-- <Player></Player> -->
+	<!-- <Stage></Stage> -->
 	<History></History>
 </div>
 
