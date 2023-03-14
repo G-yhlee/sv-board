@@ -24,7 +24,9 @@
         </div>
         {#each $S_onHistory as history}
             <div>
-                <div class="flex justify-around items-center ">
+                <div 
+                class="flex justify-around items-center hover:bg-slate-400 hover:cursor-pointer"
+                >
                     <span class="text-center">{history.xy[0]}{history.xy[1]}</span>
                     <span>{history.player}</span>
                     <span>{history.stage}</span>

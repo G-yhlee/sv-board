@@ -1,9 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const genBoard = (x:number) => 
 new Array(x).fill(new Array(x).fill("1,1")).map((arr,x)=>arr.map((_,y)=>({xy:[x+1,y+1], player: ""})))
 
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const board = [
     [
         {

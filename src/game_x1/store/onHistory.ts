@@ -1,8 +1,10 @@
 import { match,P } from 'ts-pattern';
 import { get } from 'svelte/store'
+
 // import logger from '$lib/fucntion/logger';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 import {S_onHistory,S_onBoard} from './store'
+import { genBoard } from './function/genBoard';
 
 
 
@@ -17,27 +19,25 @@ export function onHistory(cell:any) {
         player: player=="X" ? "O" : "X"
     }))
 
-    console.log(get(S_onHistory));
 
-    const makeBoard = (history :any) => {
-        
-        // const genBoard = (x:number) => new Array(x).fill(new Array(x).fill("1,1")).map((arr,x)=>arr.map((_:any,y:any)=>({xy:[x+1,y+1], player: ""})))
-
-        // let map
-
-        // history.map(({player,xy} : any ) => {
-        //     let [x,y] = xy
-        //     genBoard(5)
+    const makeBoard = (history :any,size: number) => {
+        const board = genBoard(size)
+   
+        history.filter((v: { stage: number; })=>v.stage!=0).forEach((v: {player: any; xy: [any, any] }) => {
+            console.log(v);
             
-        //     // return 
-        // })
+            const [x,y] = v.xy
+            board[x-1][y-1] = {...board[x-1][y-1], player: v.player}
+        })
 
+        console.log(board);
+        
+        return board
     }
     
     
     S_onBoard.update(s=>{
-        s[x-1][y-1] = {...s[x-1][y-1], player: player == "X" ? "O" : "X"}
-        return s
+        return makeBoard(get(S_onHistory),3)
     })
 
 }
