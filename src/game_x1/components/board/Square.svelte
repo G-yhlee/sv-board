@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { each } from "svelte/internal";
-	import { onPlayer, S_onPlayer,onBoard, S_onBoard, onHistory } from "../../store/store";
+	import { onPlayer,onBoard, S_onBoard, onHistory, updateStage } from "../../store/store";
 	// @ts-nocheck
 	
 </script>
@@ -35,6 +35,7 @@
 			onBoard(x) 
 			onPlayer(x)
 			onHistory(x)
+			updateStage(x)
 			} 
 		}
 		>{ x.player }</button> 

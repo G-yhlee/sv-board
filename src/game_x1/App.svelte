@@ -3,6 +3,7 @@
 	import Board from './components/board/Board.svelte';
 	import History from './components/history/History.svelte';
 	import Player from './components/player/player.svelte';
+	import Stage from './components/stage/stage.svelte';
 	
 </script>
 
@@ -11,6 +12,8 @@
 		<Board/>
 	</div>
 	<Player></Player>
+	
+	<Stage></Stage>
 	<History></History>
 </div>
 
