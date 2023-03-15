@@ -1,9 +1,15 @@
 <script>
-	import Game from "../game/App.svelte";
-	import Game1 from "../game_x1/App.svelte";
-
+	import Game from "../lib/games/type1/game_x0/App.svelte";
+	import Game1 from "../lib/games/type1/game_x1/App.svelte";
+	import Nav from "../lib/widgets/nav/nav.svelte";
 
     
 </script>
-<Game></Game>
-<Game1></Game1>
+<div class="flex">
+	<Nav></Nav>
+	<Game></Game>
+	<Game1></Game1>
+</div>
+
+
+
