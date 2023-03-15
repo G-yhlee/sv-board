@@ -1,19 +1,37 @@
 <script src="">
+	import { onNav, PageName, S_onNav } from "$lib/stores/store";
 
 </script>
 
 <nav class="w-[100px] h-screen bg-gray-900">
     <div class="">
         <ul class="flex flex-col items-center justify-between">
-            <li class="flex flex-col items-center justify-center w-[100px] h-[100px] bg-gray-500">
-            <div class="text-gray-200   ">a</div>
-            </li>
-            <li class="flex flex-col items-center justify-center w-[100px] h-[100px]">
-            <div class="text-gray-200   ">b</div>
-            </li>
-            <li class="flex flex-col items-center justify-center w-[100px] h-[100px]">
-            <div class="text-gray-200   ">c</div>
-            </li>
+            <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
+            data-isClick={PageName.tictactoe.name == $S_onNav}
+            on:click={()=>onNav(PageName.tictactoe.name)}
+            >
+                <span class="text-gray-200">{PageName.tictactoe.name}</span>
+            </button>
+            <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
+            data-isClick={PageName.tetris.name == $S_onNav}
+            on:click={()=>onNav(PageName.tetris.name)}
+            >
+                <span class="text-gray-200   ">{PageName.tetris.name}</span>
+            </button>
+            <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
+            data-isClick={PageName.baduk.name == $S_onNav}
+            on:click={()=>onNav(PageName.baduk.name)}
+            >
+                <span class="text-gray-200   ">{PageName.baduk.name}</span>
+            </button>
         </ul>
     </div>
 </nav>
+
+
+
+<style>
+[data-isClick="true"] {
+    background-color: rgb(104, 127, 127);
+}
+</style>

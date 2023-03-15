@@ -30,6 +30,7 @@
 <div class="board-row">
 	{#each cells as cell}
 		<button 
+		class="hover:cursor-pointer {cell.player? "hover:bg-gray-200" : "hover:bg-green-200"} {$S_winner && "hover:bg-gray-200"}"
 		on:click={ () => {
 			if(cell.player ) return
 			if($S_winner && $S_onHistory[$S_onHistory.length-1].stage == $S_onSelectedStage ) return
