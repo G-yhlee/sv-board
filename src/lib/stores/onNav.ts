@@ -5,7 +5,7 @@ import {S_onNav} from './store'
 import { goto } from "$app/navigation";
 import { page } from "$app/stores"; 
 import { get } from 'svelte/store';
-export function onNav(pageName) {
+export function onNav(pageName: string) {
     // const newUrl = new URL(get(page).url);
     // newUrl?.searchParams?.set('hello', 'world');
     // goto(pageName)

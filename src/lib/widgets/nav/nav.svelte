@@ -12,6 +12,14 @@
             >
                 <span class="text-gray-200">{PageName.tictactoe.name}</span>
             </button>
+
+            <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
+            data-isClick={PageName.baduk.name == $S_onNav}
+            on:click={()=>onNav(PageName.baduk.name)}
+            >
+                <span class="text-gray-200   ">{PageName.baduk.name}</span>
+            </button>
+
             <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
             data-isClick={PageName.tetris.name == $S_onNav}
             on:click={()=>onNav(PageName.tetris.name)}
@@ -19,10 +27,10 @@
                 <span class="text-gray-200   ">{PageName.tetris.name}</span>
             </button>
             <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
-            data-isClick={PageName.baduk.name == $S_onNav}
-            on:click={()=>onNav(PageName.baduk.name)}
+            data-isClick={PageName.cytosketch.name == $S_onNav}
+            on:click={()=>onNav(PageName.cytosketch.name)}
             >
-                <span class="text-gray-200   ">{PageName.baduk.name}</span>
+                <span class="text-gray-200   ">{PageName.cytosketch.name}</span>
             </button>
         </ul>
     </div>
