@@ -21,8 +21,8 @@
       context.stroke();
 
 
-	context2.arc(100, 100, 50, 0, Math.PI*2, false);
-	context2.fill();
+	// context2.arc(100, 100, 50, 0, Math.PI*2, false);
+	// context2.fill();
 		
 	});
 </script>
