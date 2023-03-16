@@ -11,4 +11,6 @@
 - 음성인식 가미 ( 좌상귀, 우하귀, 오른쪽 , 위로 , 착수)
 - 도메미 크리에이터스 코
 - https://everyonedraw.com/1/-178/-4043200000000000
+- 개미 빵가루 , 빵 구입, 벽 구입 , 빵존 , nft 아트 , 액자 구입, 액자안에있는 도트 지분
+- https://github.com/asattelmaier/go-haskell
 ```
