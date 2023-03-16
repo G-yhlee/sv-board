@@ -9,7 +9,7 @@ export function onNav(pageName) {
     // const newUrl = new URL(get(page).url);
     // newUrl?.searchParams?.set('hello', 'world');
     // goto(pageName)
-    goto(pageName)
+    goto("/game/"+pageName)
     S_onNav.update(s=>pageName)
     // logger(actionPattern)
     // let {pageLength, pageCurrent} = actionPattern
