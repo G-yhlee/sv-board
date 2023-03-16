@@ -1,12 +1,11 @@
 <script>
-    import { goto } from "$app/navigation";
-	// import { onMount } from "svelte/types/runtime/internal/lifecycle";
-    // onMount(()=>{
-    //     goto("/game/tic-tac-toe")
-    // })
-
-
+	import { onNav, PageName } from "$lib/stores/store";
+    import { onMount } from 'svelte';
  
+    onMount(async () => {
+            onNav(PageName.tictactoe.name)
+    });
+    
 
 </script>
 

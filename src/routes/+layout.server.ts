@@ -1,8 +1,11 @@
-import { goto } from '$app/navigation';
-import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
- 
 export const load = (({ locals }) => {
+  
+  // onMount(()=>{
+  //     onNav(PageName.tictactoe.name)
+  // })
+
+
   // throw redirect(301, '/game/baduk')
   // goto("/game/baduk")
   // if (!locals.user) {
