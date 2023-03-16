@@ -12,7 +12,7 @@
 
 <Canvas>
 	<Background color='hsl(0, 0%, 10%)'>
-		<DotGrid divisions={30} color='hsla(0, 0%, 100%, 0.5)' />
+		<DotGrid divisions={19} color='hsla(0, 0%, 100%, 0.5)' />
 	</Background>
 	<Character size={10} />
 	<Text

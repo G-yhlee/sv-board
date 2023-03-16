@@ -7,6 +7,7 @@ const PageName = {
     ["tetris"]: {name:"tetris"},
     ["baduk"]: {name:"baduk"},
     ["cytosketch"]: {name:"cytosketch"},
+    ["canvas"]: {name:"canvas"},
 }
 
 const S_onNav = writable(PageName.tictactoe.name)

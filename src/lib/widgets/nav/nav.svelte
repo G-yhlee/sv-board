@@ -32,6 +32,12 @@
             >
                 <span class="text-gray-200   ">{PageName.cytosketch.name}</span>
             </button>
+            <button class="flex flex-col items-center justify-center w-[100px] h-[100px] hover:bg-gray-500 hover:cursor-pointer"
+            data-isClick={PageName.canvas.name == $S_onNav}
+            on:click={()=>onNav(PageName.canvas.name)}
+            >
+                <span class="text-gray-200   ">{PageName.canvas.name}</span>
+            </button>
         </ul>
     </div>
 </nav>
