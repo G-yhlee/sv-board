@@ -27,9 +27,9 @@ for (let i = 3; i <= 15; i += 6) {
   }
 }
 
-return () => {
-			cancelAnimationFrame(frame);
-		};
+// return () => {
+// 			cancelAnimationFrame(frame);
+// 		};
 })
 
 </script>
