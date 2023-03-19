@@ -7,7 +7,7 @@ let canvas ;
 onMount(() => {
 const ctx = canvas.getContext('2d');
 const cellSize = canvas.width / 19;
-for (let i = 0; i < 19; i++) {
+for (let i = 0; i < 17; i++) {
   // draw horizontal line
   ctx.beginPath();
   ctx.moveTo(0, i * cellSize);
@@ -50,7 +50,7 @@ for (let i = 3; i <= 15; i += 6) {
   grid-template-rows: repeat(19, 1fr);
   
   gap: 1px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 
