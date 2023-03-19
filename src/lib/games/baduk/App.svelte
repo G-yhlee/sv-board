@@ -1,207 +1,39 @@
 <script>
-	let Dom_Stone ;
-	// $: Dom_Stone = document.getElementById("stones");
-    let className;
-    export { className as class };
-	function createStone(x, y) {
-	  console.log(x,y)
-	  const stone = document.createElement("div");
-	  stone.classList.add("stone");
-	  stone.style.left = 100+x * 25 + "px";
-	  stone.style.top = 10 + y * 25 + "px";
-	  Dom_Stone.appendChild(stone);
-	}
-  </script>
-<!--   
-<div>
-  <button   class=" bg-slate-300 " id="board" bind:this={Dom_Stone}  on:click={(e) =>{
-	const x = Math.floor(e.offsetX / 25);
-	const y = Math.floor(e.offsetY / 25);
-	createStone(x, y);
-  }}>
-  </button>
-</div> -->
+	import { onMount } from "svelte";
 
 
-<div class="board2">
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<!-- Add 18 more rows -->
-  </div>
+let canvas ;
+//= document.getElementById('board');
+onMount(() => {
+const ctx = canvas.getContext('2d');
+const cellSize = canvas.width / 19;
+for (let i = 0; i < 19; i++) {
+  // draw horizontal line
+  ctx.beginPath();
+  ctx.moveTo(0, i * cellSize);
+  ctx.lineTo(canvas.width, i * cellSize);
+  ctx.stroke();
+  
+  // draw vertical line
+  ctx.beginPath();
+  ctx.moveTo(i * cellSize, 0);
+  ctx.lineTo(i * cellSize, canvas.height);
+  ctx.stroke();
+}
+
+for (let i = 3; i <= 15; i += 6) {
+  for (let j = 3; j <= 15; j += 6) {
+    ctx.fillRect(i * cellSize - 2, j * cellSize - 2, 4, 4);
+  }
+}
+
+return () => {
+			cancelAnimationFrame(frame);
+		};
+})
+
+</script>
+<canvas bind:this={canvas} id="board" width="400" height="400"></canvas>
 
 
 <style>
