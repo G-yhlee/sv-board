@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
 
-
+//https://cdn.online-go.com/5.1/img/kaya.jpg
 let canvas ;
 //= document.getElementById('board');
 onMount(() => {
@@ -38,28 +38,13 @@ for (let i = 3; i <= 15; i += 6) {
 
 <style>
 
-.board2 {
-	width: 300px;
-	height:  300px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-gap: 2px;
-  background-color: white;
-  border: 1px solid black;
-}
-
-.board2 div {
-  background-color: gray;
-}
-
-
 #board {
   margin-top: 10px;
   margin-left: 10px;
   width: 500px;
   height: 500px;
   background-color: #ffffff;
+  background-image: url("https://cdn.online-go.com/5.1/img/kaya.jpg");
   display: grid;
   grid-template-columns: repeat(19, 1fr);
   grid-template-rows: repeat(19, 1fr);
@@ -68,15 +53,5 @@ for (let i = 3; i <= 15; i += 6) {
   border: 1px solid black;
 }
 
-  :global(.stone) {
-	background-color: rgb(30, 17, 17) !important;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	border-Radius : 50%;
-	transform: translate(-50%,-50%);
-	border-color: black; 
-    border-width: 1; 
-    border-style: solid;
-}
+
 </style>
