@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	let Dom_Stone ;
 	// $: Dom_Stone = document.getElementById("stones");
     let className;
@@ -12,7 +12,6 @@
 	  Dom_Stone.appendChild(stone);
 	}
   </script>
-<!--   
 <div>
   <button   class=" bg-slate-300 " id="board" bind:this={Dom_Stone}  on:click={(e) =>{
 	const x = Math.floor(e.offsetX / 25);
@@ -20,7 +19,7 @@
 	createStone(x, y);
   }}>
   </button>
-</div> -->
+</div> 
 
 
 <div class="board2">
@@ -31,6 +30,191 @@
 	  <div class="cell"></div>
 	  <div class="cell"></div>
 	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
+	</div>
+	<div class="row">
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	  <div class="cell"></div>
+	   Add 17 more cells 
 	</div>
 	<div class="row">
 	  <div class="cell"></div>
@@ -39,168 +223,7 @@
 	  <div class="cell"></div>
 	  <div class="cell"></div>
 	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<div class="row">
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	  <div class="cell"></div>
-	</div>
-	<!-- Add 18 more rows -->
+	 Add 18 more rows 
   </div>
 
 
@@ -247,4 +270,4 @@
     border-width: 1; 
     border-style: solid;
 }
-</style>
+</style> -->
